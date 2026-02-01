@@ -118,6 +118,17 @@ y .test.tsx que usan globals de Vitest (describe, it, expect).
 Modifica tsconfig.app.json para excluir estos archivos del build.
 ```
 
+### Prompt used
+
+```bash
+I need to exclude test files from the production build in TypeScript.
+
+The problem: when I run pnpm build, TSC tries to compile .test.ts
+and .test.tsx files that use Vitest globals (describe, it, expect).
+
+Modify tsconfig.app.json to exclude these files from the build.
+```
+
 ---
 
 ## Paso 4: Estructura de Carpetas (The Scope Rule)
