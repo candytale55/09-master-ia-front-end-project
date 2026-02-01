@@ -288,6 +288,28 @@ Genera SOLO el archivo de test. El componente lo implementaré después
 de ver que el test falla.
 ```
 
+### Prompt Used
+
+<!-- TODO: IMPORTANT RULE - COPY FOR FUTURE USE -->
+
+```bash
+I am going to create a ProductCard component using TDD.
+The component does NOT exist yet — I need the test first.
+
+Component requirements:
+- Receives a product with: id, name, price, image
+- Receives an onAddToCart callback
+- Displays the product name
+- Displays the price formatted as $XX.XX
+- Has an "Add to Cart" button that calls onAddToCart with the product
+
+Test location: src/features/product-catalog/components/ProductCard.test.tsx
+
+Generate ONLY the test file. I will implement the component later
+after seeing the test fail.
+
+```
+
 **Ejecutar (debe fallar)**:
 ```bash
 pnpm test ProductCard
