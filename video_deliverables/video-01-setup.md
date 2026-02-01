@@ -190,6 +190,35 @@ INFRAESTRUCTURA:
 Crea archivos index.ts vacíos donde sea necesario para los exports.
 ```
 
+### Prompt Used
+
+```bash
+Create the folder structure for an e-commerce application
+following the “Scope Rule”:
+
+GLOBAL SCOPE (src/shared/) – Available throughout the app:
+- types/       → Shared TypeScript types
+- utils/       → Utility functions (formatPrice, etc.)
+- constants/   → Business constants
+- components/  → Generic UI components (Button, Modal, Skeleton)
+- hooks/       → Reusable custom hooks
+
+LOCAL SCOPE (src/features/) – Specific to each feature:
+- product-catalog/
+  - components/   → ProductCard, ProductCatalog
+- shopping-cart/
+  - components/   → CartItem, CartSummary, ShoppingCart
+
+GLOBAL STATE:
+- src/context/    → React contexts (CartContext)
+
+INFRASTRUCTURE:
+- src/infrastructure/  → External services (Sentry, API clients)
+- src/test/            → Test configuration
+
+Create empty index.ts files where necessary for exports.
+```
+
 ### Estructura Resultante
 
 ```
