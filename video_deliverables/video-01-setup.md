@@ -370,6 +370,17 @@ Requisitos:
 - El onAddToCart puede ser un console.log por ahora
 ```
 
+### Prompt used:
+
+```bash
+Modify App.tsx to display a test ProductCard.
+
+Requirements:
+- Import ProductCard
+- Render one with hardcoded data (any example product)
+- onAddToCart can be a console.log for now
+```
+
 **Verificar**:
 ```bash
 pnpm dev
