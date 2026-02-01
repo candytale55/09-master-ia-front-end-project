@@ -67,16 +67,12 @@ pnpm install -D vitest @testing-library/react @testing-library/jest-dom @testing
 
 ### Prompt used
 
-```bash
-Now I want to configure testing, run this for me
+I installed it manually. 
 
+```bash
 pnpm install -D vitest @testing-library/react @testing-library/jest-dom @testing-library/user-event jsdom @vitest/coverage-v8
 ```
-It made a mess, installing it in the wrong directory. I ended installing it manually. 
 
-**Prompt para la IA:**
-```
-It made a mess, installing it in the wrong directory. I ended installing it manually. 
 
 **Prompt para la IA:**
 ``` 
@@ -88,6 +84,19 @@ Requisitos:
 - Agregar scripts en package.json: "test", "test:run", "test:coverage"
 
 El proyecto usa Vite + React + TypeScript.
+```
+
+### Prompt used 
+
+```bash
+I need to configure Vitest for testing React components.
+
+Requirements:
+- Use jsdom as the environment
+- Configure setupFiles for jest-dom
+- Add scripts to package.json: "test", "test:run", "test:coverage"
+
+The project uses Vite + React + TypeScript.
 ```
 
 **Verificar**:
