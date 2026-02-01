@@ -1,11 +1,11 @@
-import { Product } from '../../../shared/types';
+import type { Product } from '../../../shared/types';
 
 interface ProductCardProps {
     product: Product;
     onAddToCart: (product: Product) => void;
 }
 
-export default function ProductCard({ product, onAddToCart }: ProductCardProps) {
+export function ProductCard({ product, onAddToCart }: ProductCardProps) {
     return (
         <div className="bg-white rounded-lg shadow-md p-4 border border-gray-200">
             <img

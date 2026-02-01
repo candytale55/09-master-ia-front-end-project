@@ -1,8 +1,8 @@
 import { describe, it, expect, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { Product } from '../../../shared/types';
-import ProductCard from './ProductCard';
+import type { Product } from '../../../shared/types';
+import { ProductCard } from './ProductCard';
 
 describe('ProductCard', () => {
     const mockProduct: Product = {
