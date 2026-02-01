@@ -65,8 +65,17 @@ Give me the modified files.
 pnpm install -D vitest @testing-library/react @testing-library/jest-dom @testing-library/user-event jsdom @vitest/coverage-v8
 ```
 
-**Prompt para la IA:**
+### Prompt used
+
+```bash
+Now I want to configure testing, run this for me
+
+pnpm install -D vitest @testing-library/react @testing-library/jest-dom @testing-library/user-event jsdom @vitest/coverage-v8
 ```
+It made a mess, installing it in the wrong directory. I ended installing it manually. 
+
+**Prompt para la IA:**
+``` 
 Necesito configurar Vitest para testing de componentes React.
 
 Requisitos:
