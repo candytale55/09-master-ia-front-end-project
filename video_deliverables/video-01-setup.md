@@ -75,6 +75,10 @@ pnpm install -D vitest @testing-library/react @testing-library/jest-dom @testing
 It made a mess, installing it in the wrong directory. I ended installing it manually. 
 
 **Prompt para la IA:**
+```
+It made a mess, installing it in the wrong directory. I ended installing it manually. 
+
+**Prompt para la IA:**
 ``` 
 Necesito configurar Vitest para testing de componentes React.
 
