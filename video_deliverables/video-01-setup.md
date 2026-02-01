@@ -332,6 +332,25 @@ Requisitos adicionales:
 - Código mínimo para pasar los tests, nada más
 ```
 
+<!-- TODO: IMPORTANT RULE - COPY FOR FUTURE USE -->
+
+### Prompt used:
+
+```bash
+I have this failing test for ProductCard:
+
+[Paste the contents of the generated test]
+
+Implement the ProductCard.tsx component so that it passes all the tests.
+
+Location: src/features/product-catalog/components/ProductCard.tsx
+
+Additional requirements:
+- Styles with Tailwind (card with shadow, button hover)
+- Minimal code to pass the tests, nothing more
+```
+NOTE: I copied the whole content of ProductCard.test.tsx into the prompt.
+
 **Ejecutar (debe pasar)**:
 ```bash
 pnpm test ProductCard
