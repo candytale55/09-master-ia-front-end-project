@@ -17,7 +17,7 @@ pnpm install -D tailwindcss @tailwindcss/vite
 ### Prompt used:
 
 ```bash
-I want you to create a new folder to start building a project. This will represent an e-commerce site with a shopping cart. Read the @AGENTS.md file to understand what it’s about and how to do it. But to start, after creating that folder, run
+I want you to create a new folder to start building a project. This will represent an e-commerce site with a shopping cart. Read the @AGENTS.md file to understand what it’s about and how to do it. But to start, after creating that folder, run:
 
 pnpm create vite@latest simple-product-shop --template react-ts
 cd simple-product-shop
