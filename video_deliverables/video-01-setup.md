@@ -43,6 +43,20 @@ Requisitos:
 Dame los archivos modificados.
 ```
 
+### Prompt used
+
+```bash
+I am setting up a Vite project with React and TypeScript.
+I need to integrate Tailwind CSS v4.
+
+Requirements:
+- Use the @tailwindcss/vite plugin
+- Configure the vite.config.ts file
+- Update src/index.css with the Tailwind import
+
+Give me the modified files.
+```
+
 ---
 
 ## Paso 3: Configurar Testing
