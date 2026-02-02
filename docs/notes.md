@@ -65,3 +65,23 @@ Two related issues:
 - `src/App.tsx`
 - `vite.config.ts`
 - `tsconfig.app.json`
+
+---
+
+### Issue: Outdated App Tests After UI Changes
+
+**Date:** February 2, 2026
+
+**Problem:**
+Unit tests in [simple-product-shop/src/App.test.tsx](simple-product-shop/src/App.test.tsx) still targeted the default Vite template UI ("Vite + React" heading and "count is 0" button) after the app was updated to render the Product Shop page with ProductCard.
+
+**Symptoms:**
+- `pnpm test:run` failed with missing text and button assertions.
+- Failures indicated the DOM contained Product Shop content, not the Vite template UI.
+
+**Solution:**
+- Replaced the outdated assertions with checks for the Product Shop heading and ProductCard content (sample product name, price, and "Add to Cart" button).
+
+**Related Files:**
+- [simple-product-shop/src/App.test.tsx](simple-product-shop/src/App.test.tsx)
+- [simple-product-shop/src/App.tsx](simple-product-shop/src/App.tsx)

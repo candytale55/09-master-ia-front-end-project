@@ -387,6 +387,12 @@ pnpm dev
 # Abrir http://localhost:5173
 ```
 
+There were issues, see [Issue: Blank Page When Using Tailwind CSS Classes](/docs/notes.md#issue-blank-page-when-using-tailwind-css-classes).
+
+After fixing them: 
+
+![Product Sample Card](/docs/shots/scsh-01%20sample%20product%20card.png)
+
 ---
 
 ## Paso 7: Verificación Final
@@ -396,6 +402,16 @@ pnpm dev
 pnpm test:run      # Tests unitarios
 pnpm build         # Build exitoso (verifica que tsconfig excluye tests)
 ```
+
+### Promt used:
+
+```bash
+# Run ALL of these commands — all must pass
+pnpm test:run      # Unit tests
+pnpm build         # Successful build (verify that tsconfig excludes tests)
+```
+
+There was an issue that with outdated tests explained in notes.md [Issue: Outdated App tests after UI changes](/docs/notes.md#issue-outdated-app-tests-after-ui-changes)
 
 > ⚠️ **IMPORTANTE**: A partir de este video, SIEMPRE verificar con estos comandos antes de dar por completado cualquier feature.
 
