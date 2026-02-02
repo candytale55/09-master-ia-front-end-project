@@ -22,6 +22,22 @@ Ubicación: src/shared/types/index.ts
 Exporta todos los tipos para poder importarlos desde otros archivos.
 ```
 
+## Prompt Used
+
+```bash
+I need to define the TypeScript types for an e-commerce application.
+
+These types are GLOBAL SCOPE — they will be used throughout the app.
+
+Required types:
+- Product: must have id, name, price, image, and description
+- CartItem: represents a product in the cart with its quantity
+
+Location: src/shared/types/index.ts
+
+Export all types so they can be imported from other files.
+```
+
 ---
 
 ## Paso 2: Datos de Productos (Global Scope)
