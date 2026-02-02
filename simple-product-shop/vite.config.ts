@@ -1,6 +1,6 @@
 /// <reference types="vitest" />
 // ^ Enables TypeScript intellisense for Vitest's 'test' config option
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vitest/config'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
