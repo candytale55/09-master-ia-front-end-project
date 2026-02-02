@@ -58,6 +58,23 @@ Requisitos:
 Ubicación: src/shared/data/products.ts
 ```
 
+### Prompt Used
+
+```bash
+Create mock data for 6 products for a tech store.
+
+These data are GLOBAL SCOPE — available throughout the app.
+
+Requirements:
+- Varied products (headphones, smartwatch, laptop stand, keyboard, USB hub, webcam)
+- Realistic prices between $30 and $200
+- Use https://picsum.photos/seed/[name]/200 for the images
+- Short but descriptive descriptions
+- Use the Product type we defined
+
+Location: src/shared/data/products.ts
+```
+
 ---
 
 ## Paso 3: Actualizar ProductCard con Tipos
@@ -78,6 +95,25 @@ Cambios necesarios:
 Archivos:
 - src/features/product-catalog/components/ProductCard.tsx
 - src/features/product-catalog/components/ProductCard.test.tsx (si necesita cambios)
+```
+
+### Prompt used
+
+```bash
+Update the ProductCard component to use the TypeScript types we defined.
+
+ProductCard is in LOCAL SCOPE (features/product-catalog/).
+The types are in GLOBAL SCOPE (shared/types/).
+
+Required changes:
+- Import the Product type from shared/types (use a relative path)
+- Properly type the props
+- Add the product description (truncate the text if it is too long)
+- Update the test if necessary to include description in the mock
+
+Files:
+- src/features/product-catalog/components/ProductCard.tsx
+- src/features/product-catalog/components/ProductCard.test.tsx (if changes are needed)
 ```
 
 **Verificar**:

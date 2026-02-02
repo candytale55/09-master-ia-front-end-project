@@ -5,6 +5,10 @@ interface ProductCardProps {
     onAddToCart: (product: Product) => void;
 }
 
+const truncateText = (text: string, maxLength: number = 80): string => {
+    return text.length > maxLength ? text.slice(0, maxLength) + '...' : text;
+};
+
 export function ProductCard({ product, onAddToCart }: ProductCardProps) {
     return (
         <div className="bg-white rounded-lg shadow-md p-4 border border-gray-200">
@@ -14,6 +18,7 @@ export function ProductCard({ product, onAddToCart }: ProductCardProps) {
                 className="w-full h-48 object-cover rounded mb-3"
             />
             <h2 className="text-lg font-semibold text-gray-800 mb-2">{product.name}</h2>
+            <p className="text-sm text-gray-600 mb-3 min-h-10">{truncateText(product.description)}</p>
             <p className="text-xl font-bold text-blue-600 mb-4">${product.price.toFixed(2)}</p>
             <button
                 onClick={() => onAddToCart(product)}

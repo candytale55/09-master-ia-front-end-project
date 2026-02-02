@@ -10,6 +10,7 @@ describe('ProductCard', () => {
         name: 'Test Product',
         price: 29.99,
         image: 'https://example.com/product.jpg',
+        description: 'This is a test product with a detailed description.',
     };
 
     const mockOnAddToCart = vi.fn();
@@ -31,6 +32,11 @@ describe('ProductCard', () => {
         expect(image).toHaveAttribute('src', 'https://example.com/product.jpg');
     });
 
+    it('displays the product description', () => {
+        render(<ProductCard product={mockProduct} onAddToCart={mockOnAddToCart} />);
+        expect(screen.getByText('This is a test product with a detailed description.')).toBeInTheDocument();
+    });
+
     it('has an "Add to Cart" button', () => {
         render(<ProductCard product={mockProduct} onAddToCart={mockOnAddToCart} />);
         expect(screen.getByRole('button', { name: /add to cart/i })).toBeInTheDocument();
@@ -45,5 +51,16 @@ describe('ProductCard', () => {
 
         expect(mockOnAddToCart).toHaveBeenCalledTimes(1);
         expect(mockOnAddToCart).toHaveBeenCalledWith(mockProduct);
+    });
+
+    it('truncates long descriptions', () => {
+        const longDescription = 'a'.repeat(100);
+        const productWithLongDesc: Product = {
+            ...mockProduct,
+            description: longDescription,
+        };
+        render(<ProductCard product={productWithLongDesc} onAddToCart={mockOnAddToCart} />);
+        const description = screen.getByText(/^a+\.\.\.$/); // Should end with ...
+        expect(description).toBeInTheDocument();
     });
 });
